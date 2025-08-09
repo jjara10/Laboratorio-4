@@ -2,89 +2,202 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Sitio Web</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mi</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <img src="Imagenes/fotoCV.jpeg" alt="Foto personal" class="foto">
-    <h1>Jesus Eduardo Jara Bernal</h1>
-    <p>Ingeniero Mecatronico</p>
-    <p>
-      Sígueme en:
-      <a href="https://facebook.com" target="_blank">Facebook</a> |
-      <a href="https://twitter.com" target="_blank">Twitter</a>
-    </p>
-    <!-- Menú de navegación -->
-    <nav>
-      <ul class="menu">
-        <li><a href="#biografia">Biografía</a></li>
-        <li><a href="#listas">Listas</a></li>
-        <li><a href="#horario">Horario</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+  <!-- Menú fijo -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Mi Portafolio</div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <ul id="menu">
+        <li><a href="#acerca">Acerca de mi</a></li>
+        <li><a href="#for_aca">Formación academica</a></li>
+        <li><a href="#expe_labo">Experiencia Laboral</a></li>
+        <li><a href="#expe_pro">Experiencia en Proyectos</a></li>
+        <li><a href="#refe_perso">Referencia Personal</a></li>
+        <li><a href="#contac">Contacto</a></li>
+        <li><a href="#">Arriba</a></li>
       </ul>
-    </nav>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="perfil-header">
+    <img src="Imagenes/fotoCV.jpeg" alt="Jesus Eduardo Jara Bernal" class="fotoCV">
+    <div class="nombre-cargo">
+      <h1>Jesus Eduardo Jara Bernal</h1>
+      <h2>Ingeniero Mecatrónico</h2>
+      <p><a href="https://www.linkedin.com/in/jesus-eduardo-jara-bernal-842a361b5/" target="_blank">Linkedin</a> | <a href="https://www.facebook.com/share/1A6VA9SKLf/" target="_blank">Facebook</a></p>
+    </div>
   </header>
 
-  <section id="biografia" class="biografia">
-    <h2>Biografía</h2>
-    <p>Escribe aquí una breve biografía personal o profesional.</p>
+  <!-- Sección Acerca de mí -->
+  <section id="acerca">
+    <div class="content-area">
+      <h2>Acerca de mi</h2>
+      <p align="justify">Ingeniero Mecatronico proactivo y autodidacta apasionado por el área de la
+        programación, diseño <em>CAD</em>, <em>electrónica</em> y <em>automatización</em>, con experiencia
+        en planeación y ejecución de proyectos relacionados con la <em>mecatrónica</em>.
+        Dispuesto a cumplir con las distintas funciones, obligaciones y normas
+        laborales, aportando mi conocimiento y dispuesto a aprender.</p>
+    </div>
   </section>
 
-  <section id="listas" class="listas">
-    <h2>Hobbies</h2>
-    <ul>
-      <li>Hobby 1</li>
-      <li>Hobby 2</li>
-    </ul>
-
-    <h2>Tareas Prioritarias</h2>
-    <ol>
-      <li>Tarea 1</li>
-      <li>Tarea 2</li>
-    </ol>
+  <!-- Formación Académica -->
+  <section id="for_aca">
+    <div class="content-area">
+      <h2>Formación Academica</h2>
+      <div class="table-responsive">
+        <table>
+          <tr>
+            <th>
+              <p align="center">Institución</p>
+            </th>
+            <th>
+              <p align="center">Titulo obtenido</p>
+            </th>
+            <th>
+              <p align="center">Año</p>
+            </th>
+          </tr>
+          <tr>
+            <td>Universidad Autonoma de Occidente <a href="https://www.uao.edu.co/" target="_blank">UAO</a></td>
+            <td>Ingeniero Mecatrónico</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Centro Colombiano de Estudios Profesionales <a href="https://www.cecep.edu.co/"
+                target="_blank">CECEP</a></td>
+            <td>Tecnologo en mecatrónica</td>
+            <td>2016</td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </section>
 
-  <section id="horario" class="horario">
-    <h2>Horario Semanal</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Día</th>
-          <th>Actividad</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Lunes</td>
-          <td>Ejemplo</td>
-        </tr>
-        <tr>
-          <td>Martes</td>
-          <td>Ejemplo</td>
-        </tr>
-      </tbody>
-    </table>
+  <!-- Experiencia Laboral -->
+  <section id="expe_labo">
+    <div class="content-area">
+      <h2>Experiencia Laboral</h2>
+      <ul type="square">
+        <li>
+          <h3>Ingeniero de proyectos</h3>
+        </li>
+        <p>Crearme Ingeniería S.A.S | Febrero 2021 - Actualmente</p>
+        <p align="justify">Planificación, ejecución, monitoreo, evaluación, cierre y rendición de
+          cuentas de proyectos de ingeniería en mecatrónica. Programación de
+          microcontroladores. Diseño y ensamble de PCB, diseño CAD e impresión 3D</p>
+      </ul>
+    </div>
   </section>
 
-  <section id="contacto" class="contacto">
-    <h2>Formulario de Contacto</h2>
-    <form id="contactForm">
-      <label>Nombre: <input type="text" id="nombre" required /></label><br>
-      <label>Motivo: <input type="text" id="motivo" required /></label><br>
-      <label>Email: <input type="email" id="email" required /></label><br>
-      <button type="submit">Enviar</button>
+  <!-- Experiencia en Proyectos -->
+  <section id="expe_pro">
+    <div class="content-area">
+      <h2>Experiencia en Proyectos</h2>
+      <ol>
+        <li align="justify">Desarrollo de controlador y tarjetas de potencia para cajón eléctrico
+          de semaforización inteligente. <b>Crearme Ingeniería S.A.S.</b></li>
+        <li align="justify">Desarrollo de sistema de internet de las cosas para pesaje e
+          inventario de frutos en cosecha con protocolo de comunicación
+          Zigbee. <b>Crearme Ingeniería S.A.S.</b></li>
+        <li align="justify">Desarrollo de alarma comunitaria que ejecuta sonidos de alerta
+          programables por medio de comandos enviados por protocolo de
+          comunicación RF 433. <b>Crearme Ingeniería S.A.S.</b></li>
+        <li align="justify">Desarrollo de dispositivo para detección de monóxido de
+          carbono con conexión a Home Assistant generando reportes y
+          activando un extractor. <b>Crearme Ingeniería S.A.S.</b></li>
+        <li align="justify">Diseño de sistema de detección de movimiento en alambrado
+          perimetral con sensor de medición inercial y comunicación a central
+          por medio de un protocolo LoRa. <b>Crearme Ingeniería S.A.S.</b></li>
+        <li align="justify">Desarrollo de sistema de horno de reflujo para soldar PCB’s con
+          monitoreo, ejecución y edición de perfiles de soldadura en pagina
+          web.<b>Crearme Ingeniería S.A.S. </b></li>
+        <li align="justify">Configuración e implementación de dispositivos de Domótica
+          usando la plataforma Home Assistant.<b>Crearme Ingeniería S.A.S.</b></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Referencia Personal -->
+  <section id="refe_perso">
+    <div class="content-area">
+      <h2>Referencia Personal</h2>
+      <div class="table-responsive">
+        <table>
+          <tr>
+            <th>
+              <p align="center">Nombre</p>
+            </th>
+            <th>
+              <p align="center">Empresa</p>
+            </th>
+            <th>
+              <p align="center">Profesión</p>
+            </th>
+            <th>
+              <p align="center">Cargo</p>
+            </th>
+            <th>
+              <p align="center">Telefono</p>
+            </th>
+          </tr>
+          <tr>
+            <td>Adolfo León Hernández López</td>
+            <td>**********</td>
+            <td>Ingeniero Mecatrónico</td>
+            <td>**********</td>
+            <td>**********</td>
+          </tr>
+          <tr>
+            <td>José Leonardo Jaramillo Vallejo</td>
+            <td>**********</td>
+            <td>Ingeniero Mecánico</td>
+            <td>**********</td>
+            <td>**********</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulario -->
+  <section id="contac" class="content-area">
+    <h2 align="center">Formulario para contacto</h2>
+    <form id="contactForm" class="formulario-contacto">
+      <fieldset>
+        <legend>Ingresa los datos de contacto</legend>
+
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombres y Apellidos" maxlength="100" required>
+
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@mail.com" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="3** *** ****" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Preguntas? ¿Sugerencias?"></textarea>
+
+        <div class="botones">
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpiar">
+        </div>
+      </fieldset>
     </form>
-
-    <!-- Aquí se mostrarán los datos ingresados -->
     <div id="resultado"></div>
   </section>
 
+  <hr>
   <footer>
-    <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+    <p align="center">Los datos en este documento son de caracter personal y no publico, derechos reservados.</p>
   </footer>
 
   <script src="script.js"></script>

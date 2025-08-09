@@ -1,27 +1,24 @@
+// Menú hamburguesa
+document.getElementById("hamburger").addEventListener("click", function () {
+    document.getElementById("menu").classList.toggle("show");
+});
+
+// Mostrar datos del formulario en un alert
 document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+    e.preventDefault();
 
-  const nombre = document.getElementById("nombre").value.trim();
-  const motivo = document.getElementById("motivo").value.trim();
-  const email = document.getElementById("email").value.trim();
+    const nombre = document.getElementById("nombre").value;
+    const email = document.getElementById("email").value;
+    const telefono = document.getElementById("telefono").value;
+    const mensaje = document.getElementById("mensaje").value;
 
-  if (!nombre || !motivo || !email) {
-    alert("Por favor, completa todos los campos.");
-    return;
-  }
+    alert(
+        "Datos ingresados correctamente:\n\n" +
+        "Nombre: " + nombre + "\n" +
+        "Email: " + email + "\n" +
+        "Teléfono: " + telefono + "\n" +
+        "Mensaje: " + mensaje
+    );
 
-  if (!email.includes("@")) {
-    alert("Correo electrónico no válido.");
-    return;
-  }
-
-  // Mostrar datos en el div resultado
-  document.getElementById("resultado").innerHTML = `
-    <h3>Datos Ingresados:</h3>
-    <p><strong>Nombre:</strong> ${nombre}</p>
-    <p><strong>Motivo:</strong> ${motivo}</p>
-    <p><strong>Email:</strong> ${email}</p>
-  `;
-
-  this.reset();
+    this.reset();
 });
