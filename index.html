@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Sitio Web</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <img src="Imagenes/fotoCV.jpeg" alt="Foto personal" class="foto">
+    <h1>Jesus Eduardo Jara Bernal</h1>
+    <p>Ingeniero Mecatronico</p>
+    <p>
+      Sígueme en:
+      <a href="https://facebook.com" target="_blank">Facebook</a> |
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+    </p>
+    <!-- Menú de navegación -->
+    <nav>
+      <ul class="menu">
+        <li><a href="#biografia">Biografía</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#horario">Horario</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="biografia" class="biografia">
+    <h2>Biografía</h2>
+    <p>Escribe aquí una breve biografía personal o profesional.</p>
+  </section>
+
+  <section id="listas" class="listas">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Hobby 1</li>
+      <li>Hobby 2</li>
+    </ul>
+
+    <h2>Tareas Prioritarias</h2>
+    <ol>
+      <li>Tarea 1</li>
+      <li>Tarea 2</li>
+    </ol>
+  </section>
+
+  <section id="horario" class="horario">
+    <h2>Horario Semanal</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Día</th>
+          <th>Actividad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lunes</td>
+          <td>Ejemplo</td>
+        </tr>
+        <tr>
+          <td>Martes</td>
+          <td>Ejemplo</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Formulario de Contacto</h2>
+    <form id="contactForm">
+      <label>Nombre: <input type="text" id="nombre" required /></label><br>
+      <label>Motivo: <input type="text" id="motivo" required /></label><br>
+      <label>Email: <input type="email" id="email" required /></label><br>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Aquí se mostrarán los datos ingresados -->
+    <div id="resultado"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
